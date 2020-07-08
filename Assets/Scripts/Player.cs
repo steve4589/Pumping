@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    //public GameManager gameManager;
-    private float vx = 0;
+    public GameManager gameManager;
+    public GameObject pumping;
 
+    public Slider pumpingBar;
     public float moveSpeed;
     public float jumpPower;
-    public float maxJump;
     public float maxPumping;
+    float maxJump = 2;
     int jumpCount = 0;
     int pumpingCount = 0;
 
@@ -19,7 +21,7 @@ public class Player : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
 
-    BoxCollider boxCollider;
+    CapsuleCollider2D capsuleCollider;
 
     Animator anim;
 
@@ -28,7 +30,7 @@ public class Player : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update()
@@ -67,24 +69,30 @@ public class Player : MonoBehaviour
             anim.SetBool("isWalk", true);
         }
 
-        //Pumping Charging
-        if (Input.GetKey(KeyCode.UpArrow))
+        //Pumping Charging Down
+        if (Input.GetKey(KeyCode.UpArrow) && pumpingBar.value < 1f)
         {
-            if(pumpingCount <= maxPumping)
+            pumping.SetActive(true);
+
+            if (pumpingCount <= maxPumping)
             {
                 pumpingCount+=3;
+                pumpingBar.value = Mathf.MoveTowards(pumpingBar.value, 1f, Time.deltaTime);
             }
         }
 
+        //Pumping Charging Up
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
-            if(pumpingCount >= 100)
+            if (pumpingCount >= 10 && pumpingBar.value >= 0.2)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
-                //rigid.AddForce(Vector2.up * jumpPower * pumpingCount / 100, ForceMode2D.Impulse);
                 anim.SetBool("isJump", true);
             }
             pumpingCount = 0;
+            pumpingBar.value = 0;
+
+            pumping.SetActive(false);
         }
     }
 
