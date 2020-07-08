@@ -83,10 +83,6 @@ public class GameManager : MonoBehaviour
         int gameScene = PlayerPrefs.GetInt("GameScene");
         gaSc = PlayerPrefs.GetString("GaSc");
 
-        if (SceneManager.GetActiveScene().buildIndex >= 2)
-        {
-            //player.transform.position = new Vector3(x, y, 0);
-        }
         SceneManager.LoadScene(gameScene);
     }
 

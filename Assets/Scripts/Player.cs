@@ -15,6 +15,9 @@ public class Player : MonoBehaviour
     public GameObject pumping;
     public Slider pumpingBar;
 
+    //게임 중 사망 시 다시 시작 버튼
+    public GameObject UIReStart;
+
     //플레이어 이동
     public float moveSpeed;
     public float jumpPower;
@@ -43,7 +46,17 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 1f);
+        if(energyBar.value <= 0.5f)
+        {
+            onDie();
+            energyBar.value = 0f;
+            UIReStart.SetActive(true);
+            anim.SetTrigger("doDied");
+        }
+        else
+        {
+            energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 1f);
+        }
 
         //Jump
         if (Input.GetButtonDown("Jump") && jumpCount < 2 && energyBar.value >= 1f)
@@ -116,16 +129,6 @@ public class Player : MonoBehaviour
 
         rigid.velocity = new Vector2(h * moveSpeed, rigid.velocity.y);
 
-        //MaxSpeed
-        /* if(rigid.velocity.x > moveSpeed) // Right
-        {
-            rigid.velocity = new Vector2(moveSpeed, rigid.velocity.y);
-        }
-        else if (rigid.velocity.x < moveSpeed * (-1)) // Left
-        {
-            rigid.velocity = new Vector2(moveSpeed * (-1), rigid.velocity.y);
-        } */
-
         //Landing Platform
         if (rigid.velocity.y < 0)
         {
@@ -150,10 +153,68 @@ public class Player : MonoBehaviour
             {
                 if (rayHit2.distance < 0.5f)
                 {
-                    Debug.Log("Ray가 몬스터에게 닿았다!!");
+                    energyBar.value -= 1;
                 }
             }
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            //Attack
+            if ((rigid.velocity.y < 0) && (transform.position.y > collision.transform.position.y))
+            {
+                //onAttack(collision.transform);
+            }
+            else //Damaged
+            {
+                onDamaged(collision.transform.position);
+            }
+        }
+    }
+
+    private void onDamaged(Vector2 targetPos)
+    {
+        //Energy Down
+        energyBar.value--;
+
+        //Change Layer (Immortal Active)
+        gameObject.layer = 11;
+
+        //View Alpha
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+
+        //Reaction Force
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        rigid.AddForce(new Vector2(dirc, 1) * 7, ForceMode2D.Impulse);
+
+        //Animation
+        anim.SetTrigger("doDamaged");
+
+        Invoke("offDamaged", 2);
+    }
+
+    void offDamaged()
+    {
+        gameObject.layer = 10;
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+    }
+
+    public void onDie()
+    {
+        //Sprite Alpha
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+
+        //Sprite Filp Y
+        spriteRenderer.flipY = true;
+
+        //Collider Disable
+        capsuleCollider.enabled = false;
+
+        //Die Effect Jump
+        rigid.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse);
     }
 
     public void VelocityZero()
