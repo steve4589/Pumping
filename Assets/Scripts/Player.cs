@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 0.5f);
+        energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 1f);
 
         //Jump
         if (Input.GetButtonDown("Jump") && jumpCount < 2 && energyBar.value >= 1f)
@@ -51,7 +51,6 @@ public class Player : MonoBehaviour
             if(jumpCount < maxJump)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower);
-                //rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 anim.SetBool("isJump", true);
                 jumpCount++;
                 energyBar.value--;
