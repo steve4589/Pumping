@@ -1,15 +1,21 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public GameManager gameManager;
-    public GameObject pumping;
 
+    //플레이어 에너지
+    public Slider energyBar;
+
+    //플레이어 펌핑(차징)
+    public GameObject pumping;
     public Slider pumpingBar;
+
+    //플레이어 이동
     public float moveSpeed;
     public float jumpPower;
     public float maxPumping;
@@ -17,26 +23,30 @@ public class Player : MonoBehaviour
     int jumpCount = 0;
     int pumpingCount = 0;
 
+    Animator anim;
     Rigidbody2D rigid;
-
     SpriteRenderer spriteRenderer;
-
     CapsuleCollider2D capsuleCollider;
 
-    Animator anim;
+    public void Start()
+    {
+        energyBar.value = 10;
+    }
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update()
     {
+        energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 0.5f);
+
         //Jump
-        if (Input.GetButtonDown("Jump") && jumpCount < 2)
+        if (Input.GetButtonDown("Jump") && jumpCount < 2 && energyBar.value >= 1f)
         {
             if(jumpCount < maxJump)
             {
@@ -44,6 +54,7 @@ public class Player : MonoBehaviour
                 //rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 anim.SetBool("isJump", true);
                 jumpCount++;
+                energyBar.value--;
             }
         }
 
@@ -70,7 +81,7 @@ public class Player : MonoBehaviour
         }
 
         //Pumping Charging Down
-        if (Input.GetKey(KeyCode.UpArrow) && pumpingBar.value < 1f)
+        if (Input.GetKey(KeyCode.UpArrow) && pumpingBar.value < 1f && energyBar.value >= 1f)
         {
             pumping.SetActive(true);
 
@@ -82,12 +93,13 @@ public class Player : MonoBehaviour
         }
 
         //Pumping Charging Up
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.UpArrow) && energyBar.value >= 1f)
         {
             if (pumpingCount >= 10 && pumpingBar.value >= 0.2)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
                 anim.SetBool("isJump", true);
+                energyBar.value -= 3;
             }
             pumpingCount = 0;
             pumpingBar.value = 0;
