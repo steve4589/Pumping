@@ -160,4 +160,13 @@ public class Player : MonoBehaviour
     {
         rigid.velocity = Vector2.zero;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Finish")
+        {
+            //Next Stage
+            gameManager.NextStage();
+        }
+    }
 }

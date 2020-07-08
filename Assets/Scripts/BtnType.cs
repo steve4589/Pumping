@@ -3,24 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public enum BTNType
 {
     New,
     Load,
+    Save,
     Option,
     Sound,
     Bgm,
     Back,
     Main,
-    Exit
+    Exit,
+    Restart
 }
 
 public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public BTNType currentType;
 
+    public SceneLoad scene;
+
     public Transform buttonScale;
+
+    public GameManager game;
 
     Vector3 defaultScale;
 
@@ -46,7 +53,8 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 SceneLoad.LoadSceneHandle("Stage_1", 1);
                 break;
             case BTNType.Load:
-                SceneLoad.LoadSceneHandle("Stage_1", 2);
+                //game.GameLoad();
+                SceneLoad.LoadSceneHandle(game.gaSc, 2);
                 break;
             case BTNType.Option:
                 CanvasGroupOn(optionGroup);
@@ -85,6 +93,10 @@ public class BtnType : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 break;
             case BTNType.Exit:
                 Application.Quit();
+                break;
+            case BTNType.Restart:
+                //SceneManager를 이용하여 씬을 불러오는데, 현재 씬의 인덱스 번호를 불러와서 현재의 씬을 불러온다.
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
         }
     }

@@ -173,8 +173,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63119a3212bf4948a906b70750c4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 3
+  currentType: 4
+  scene: {fileID: 0}
   buttonScale: {fileID: 46914859}
+  game: {fileID: 0}
   mainGroup: {fileID: 0}
   optionGroup: {fileID: 0}
   SoundText: {fileID: 1732883900}
@@ -503,8 +505,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63119a3212bf4948a906b70750c4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 2
+  currentType: 3
+  scene: {fileID: 0}
   buttonScale: {fileID: 297512112}
+  game: {fileID: 0}
   mainGroup: {fileID: 900735210}
   optionGroup: {fileID: 117989879}
   SoundText: {fileID: 0}
@@ -522,6 +526,7 @@ GameObject:
   - component: {fileID: 327987921}
   - component: {fileID: 327987920}
   - component: {fileID: 327987923}
+  - component: {fileID: 327987924}
   m_Layer: 5
   m_Name: LoadBtn
   m_TagString: Untagged
@@ -653,11 +658,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentType: 1
+  scene: {fileID: 0}
   buttonScale: {fileID: 327987919}
+  game: {fileID: 1740102346}
   mainGroup: {fileID: 0}
   optionGroup: {fileID: 0}
   SoundText: {fileID: 0}
   BgmText: {fileID: 0}
+--- !u!114 &327987924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327987918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dbb9d5ec2cf034a92736ed52ef976f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageIndex: 0
+  playerMv: {fileID: 0}
+  menuSet: {fileID: 900735206}
+  player: {fileID: 0}
 --- !u!1 &330714708
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,10 +741,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.1254902, g: 0.21960786, b: 0.3921569, a: 1}
-    m_HighlightedColor: {r: 0, g: 0.5606351, b: 1, a: 1}
+    m_NormalColor: {r: 0.9294118, g: 0.4901961, b: 0.19215688, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0.5117583, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9294118, g: 0.4901961, b: 0.19607845, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0.025458813, a: 1}
     m_DisabledColor: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -801,8 +824,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63119a3212bf4948a906b70750c4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 7
+  currentType: 8
+  scene: {fileID: 0}
   buttonScale: {fileID: 330714709}
+  game: {fileID: 0}
   mainGroup: {fileID: 0}
   optionGroup: {fileID: 0}
   SoundText: {fileID: 0}
@@ -1262,8 +1287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63119a3212bf4948a906b70750c4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 5
+  currentType: 6
+  scene: {fileID: 0}
   buttonScale: {fileID: 1261858994}
+  game: {fileID: 0}
   mainGroup: {fileID: 900735210}
   optionGroup: {fileID: 117989879}
   SoundText: {fileID: 0}
@@ -1572,8 +1599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63119a3212bf4948a906b70750c4bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 4
+  currentType: 5
+  scene: {fileID: 0}
   buttonScale: {fileID: 1432336774}
+  game: {fileID: 0}
   mainGroup: {fileID: 0}
   optionGroup: {fileID: 0}
   SoundText: {fileID: 0}
@@ -2048,6 +2077,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23dbb9d5ec2cf034a92736ed52ef976f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stageIndex: 0
+  playerMv: {fileID: 0}
+  menuSet: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &2038600130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,7 +2225,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentType: 0
+  scene: {fileID: 0}
   buttonScale: {fileID: 2038600131}
+  game: {fileID: 0}
   mainGroup: {fileID: 0}
   optionGroup: {fileID: 0}
   SoundText: {fileID: 0}

@@ -9,8 +9,8 @@ public class Charging : MonoBehaviour
     public float jumpPower;
     public float maxJump;
     public float maxPumping;
-    int jumpCount = 0;
-    int pumpingCount = 0;
+    public int jumpCount = 0;
+    public int pumpingCount = 0;
 
     Rigidbody2D rigid;
 

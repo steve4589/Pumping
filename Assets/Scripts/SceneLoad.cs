@@ -11,6 +11,8 @@ public class SceneLoad : MonoBehaviour
     public static string loadScene;
     public static int loadType;
 
+    public GameManager game;
+
     private void Start()
     {
         StartCoroutine(LoadScene());
@@ -35,22 +37,6 @@ public class SceneLoad : MonoBehaviour
         {
             yield return null;
 
-            if (loadType == 0)
-            {
-                //Main화면으로
-                SceneManager.LoadScene("Main");
-            }
-            else if (loadType == 1)
-            {
-                //새게임
-                Debug.Log("새게임");
-            }
-            else if (loadType == 2)
-            {
-                //옛게임
-                Debug.Log("옛게임");
-            }
-
             if (progressBar.value < 0.9f)
             {
                 progressBar.value = Mathf.MoveTowards(progressBar.value, 0.9f, Time.deltaTime);
@@ -68,6 +54,22 @@ public class SceneLoad : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && (progressBar.value >= 1f) && (operation.progress >= 0.9f))
             {
                 operation.allowSceneActivation = true;
+            }
+
+            if (loadType == 0)
+            {
+                //Main화면으로
+                SceneManager.LoadScene("Main");
+            }
+            else if (loadType == 1)
+            {
+                //새게임
+                SceneManager.LoadScene("Stage_1");
+            }
+            else if (loadType == 2)
+            {
+                //옛게임
+                game.GameLoad();
             }
         }
     }

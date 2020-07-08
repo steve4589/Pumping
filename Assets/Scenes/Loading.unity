@@ -306,6 +306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23dbb9d5ec2cf034a92736ed52ef976f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stageIndex: 2
+  playerMv: {fileID: 0}
+  menuSet: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &442290891
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressBar: {fileID: 2105869180}
   loadText: {fileID: 507321363}
+  game: {fileID: 428041963}
 --- !u!1 &507321361
 GameObject:
   m_ObjectHideFlags: 0
