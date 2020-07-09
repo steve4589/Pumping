@@ -1544,9 +1544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83fcd09447be2c04a89f2a14ce1f5744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 867833567}
   miniMap: {fileID: 1787338998}
   miniMapCamera: {fileID: 219060538}
-  cameraSpeed: 5
+  caSpd: 3
 --- !u!1 &565476945
 GameObject:
   m_ObjectHideFlags: 0
