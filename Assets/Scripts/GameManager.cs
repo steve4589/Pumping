@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject menuSet;
     public GameObject player;
-    public GameObject miniMap;
 
     public string gaSc;
 
@@ -46,19 +45,6 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        //만약 'T'를 누르면 미니맵 On/Off
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (miniMap.activeSelf)
-            {
-                miniMap.SetActive(false);
-            }
-            else
-            {
-                miniMap.SetActive(true);
-            }
-        }
-
         //Sub Menu
         if (Input.GetButtonDown("Cancel"))
         {
