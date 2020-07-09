@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MiniMap : MonoBehaviour
 {
+    public GameObject player;
     public GameObject miniMap;
     public GameObject miniMapCamera;
 
@@ -13,14 +14,9 @@ public class MiniMap : MonoBehaviour
     //cameraSpeed
     public int caSpd;
 
-    private float x;
-    private float y;
-
     void Start()
     {
         caMove = miniMapCamera.transform;
-        x = miniMapCamera.transform.position.x;
-        y = miniMapCamera.transform.position.y;
     }
 
     void Update()
@@ -63,9 +59,12 @@ public class MiniMap : MonoBehaviour
             }
         }
 
+        float x = player.transform.position.x;
+        float y = player.transform.position.y;
+
         if (Input.GetKeyUp(KeyCode.T))
         {
-            caMove.position = new Vector3(x, y, -10);
+            caMove.position = new Vector3(x, y + 5, -10);
         }
     }
 }
