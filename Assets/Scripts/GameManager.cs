@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
         //Sub Menu
-        if (Input.GetButtonDown("Cancel"))
+        if (stageIndex!=0&&Input.GetButtonDown("Cancel"))
         {
             if (menuSet.activeSelf)
             {

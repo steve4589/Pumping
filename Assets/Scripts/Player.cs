@@ -152,7 +152,8 @@ public class Player : MonoBehaviour
             {
                 if (rayHit2.distance < 0.5f)
                 {
-                    energyBar.value -= 1;
+                    Debug.Log("Ray가 함정에 닿았다!!");
+                    onDamaged(capsuleCollider.transform.position);
                 }
             }
         }
@@ -172,6 +173,11 @@ public class Player : MonoBehaviour
                 onDamaged(collision.transform.position);
             }
         }
+
+        if(collision.gameObject.tag == "Platform")
+        {
+            anim.SetBool("isJump", false);
+        }
     }
 
     private void onDamaged(Vector2 targetPos)
@@ -186,8 +192,8 @@ public class Player : MonoBehaviour
         spriteRenderer.color = new Color(1, 1, 1, 0.4f);
 
         //Reaction Force
-        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
-        rigid.AddForce(new Vector2(dirc, 1) * 7, ForceMode2D.Impulse);
+        //int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        //rigid.AddForce(new Vector2(dirc, 1) * 7, ForceMode2D.Impulse);
 
         //Animation
         anim.SetTrigger("doDamaged");
