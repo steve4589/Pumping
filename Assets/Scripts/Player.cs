@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     CapsuleCollider2D capsuleCollider;
 
+    Vector3 previousPosition = new Vector3();
+
     public void Start()
     {
         energyBar.value = 10;
@@ -46,12 +48,16 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (this.transform.position.y < this.previousPosition.y)
+        {
+            anim.SetBool("isJumpUp", false);
+        }
+
+        this.previousPosition = this.transform.position;
+
         if(energyBar.value <= 0.5f)
         {
             onDie();
-            energyBar.value = 0f;
-            UIReStart.SetActive(true);
-            anim.SetTrigger("doDied");
         }
         else
         {
@@ -64,7 +70,8 @@ public class Player : MonoBehaviour
             if(jumpCount < maxJump)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower);
-                anim.SetBool("isJump", true);
+                anim.SetBool("isJumpUp", true);
+                anim.SetBool("isJumpDown", true);
                 jumpCount++;
                 energyBar.value--;
             }
@@ -84,11 +91,11 @@ public class Player : MonoBehaviour
         //Animation
         if (Mathf.Abs(rigid.velocity.x) < 0.3f)
         {
-            anim.SetBool("isWalk", false);
+            anim.SetBool("isRun", false);
         }
         else
         {
-            anim.SetBool("isWalk", true);
+            anim.SetBool("isRun", true);
         }
 
         //Pumping Charging Down
@@ -109,7 +116,8 @@ public class Player : MonoBehaviour
             if (pumpingCount >= 10 && pumpingBar.value >= 0.2)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
-                anim.SetBool("isJump", true);
+                anim.SetBool("isJumpUp", true);
+                anim.SetBool("isJumpDown", true);
                 energyBar.value -= 3;
             }
             pumpingCount = 0;
@@ -139,7 +147,8 @@ public class Player : MonoBehaviour
             {
                 if (rayHit.distance < 0.5f)
                 {
-                    anim.SetBool("isJump", false);
+                    anim.SetBool("isJumpUp", false);
+                    anim.SetBool("isJumpDown", false);
                     jumpCount = 0;
                 }
             }
@@ -176,7 +185,7 @@ public class Player : MonoBehaviour
 
         if(collision.gameObject.tag == "Platform")
         {
-            anim.SetBool("isJump", false);
+            anim.SetBool("isJumpUp", false);
         }
     }
 
@@ -209,8 +218,14 @@ public class Player : MonoBehaviour
 
     public void onDie()
     {
+        energyBar.value = 0f;
+
+        UIReStart.SetActive(true);
+
+        anim.SetTrigger("doDied");
+
         //Sprite Alpha
-        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        /* spriteRenderer.color = new Color(1, 1, 1, 0.4f);
 
         //Sprite Filp Y
         spriteRenderer.flipY = true;
@@ -219,7 +234,7 @@ public class Player : MonoBehaviour
         capsuleCollider.enabled = false;
 
         //Die Effect Jump
-        rigid.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse);
+        rigid.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse); */
     }
 
     public void VelocityZero()
