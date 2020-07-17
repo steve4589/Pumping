@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 {
     public GameManager gameManager;
 
+    public GameObject burstTrap;
+
     //플레이어 에너지
     public Slider energyBar;
 
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
     int pumpingCount = 0;
 
     Animator anim;
+    Collision2D playerCollision;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     CapsuleCollider2D capsuleCollider;
@@ -124,14 +127,14 @@ public class Player : MonoBehaviour
 
             Debug.DrawRay(rigid.position, Vector3.forward, new Color(0, 1, 0));
 
-            RaycastHit2D rayHit2 = Physics2D.Raycast(rigid.position, Vector3.forward * 50f, 1, LayerMask.GetMask("Enemy"));
+            RaycastHit2D rayHit2 = Physics2D.Raycast(rigid.position, Vector3.forward, 1, LayerMask.GetMask("Enemy"));
 
             if (rayHit2.collider != null)
             {
                 if (rayHit2.distance < 0.5f)
                 {
                     Debug.Log("Ray가 함정에 닿았다!!");
-                    onDamaged(capsuleCollider.transform.position);
+                    onDamaged(capsuleCollider.transform.position, 1);
                 }
             }
         }
@@ -186,10 +189,10 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        /* if (collision.gameObject.tag == "Enemy")
         {
             //Attack
-            if ((rigid.velocity.y < 0) && (transform.position.y > collision.transform.position.y))
+            /* if ((rigid.velocity.y < 0) && (transform.position.y > collision.transform.position.y))
             {
                 //onAttack(collision.transform);
             }
@@ -197,33 +200,58 @@ public class Player : MonoBehaviour
             {
                 onDamaged(collision.transform.position);
             }
-        }
+            onDamaged(collision.transform.position);
+        } */
 
         if(collision.gameObject.tag == "Platform")
         {
             anim.SetBool("isJumpUp", false);
         }
+
+        if(collision.gameObject.tag == "BurstTrap")
+        {
+            anim.SetTrigger("doTouch");
+            
+            onDamaged(collision.transform.position, 5);
+        }
     }
 
-    private void onDamaged(Vector2 targetPos)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        //Energy Down
-        energyBar.value--;
+         if (collision.gameObject.tag == "Enemy")
+        {
+            onDamaged(collision.transform.position, 1);
+        }
+    }
 
-        //Change Layer (Immortal Active)
-        gameObject.layer = 11;
+    private void onDamaged(Vector2 targetPos, int what)
+    {
+        energyBar.value -= what;
 
-        //View Alpha
-        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        if (what == 1)
+        {
+            //Energy Down
+            energyBar.value -= what;
 
-        //Reaction Force
-        //int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
-        //rigid.AddForce(new Vector2(dirc, 1) * 7, ForceMode2D.Impulse);
+            //Change Layer (Immortal Active)
+            gameObject.layer = 11;
+
+            //View Alpha
+            spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        }
+        else if(what == 5)
+        {
+            //Reaction Force
+            int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+            rigid.AddForce(new Vector2(dirc, 1) * 2, ForceMode2D.Impulse);
+
+            Destroy(burstTrap, 2);
+        }
 
         //Animation
         anim.SetTrigger("doDamaged");
 
-        Invoke("offDamaged", 2);
+        Invoke("offDamaged", 0.5f);
     }
 
     void offDamaged()
