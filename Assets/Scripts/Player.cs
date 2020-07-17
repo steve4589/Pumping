@@ -64,28 +64,22 @@ public class Player : MonoBehaviour
             energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 1f);
         }
 
-        //Jump
-        if (Input.GetButtonDown("Jump") && jumpCount < 2 && energyBar.value >= 1f)
+        if(energyBar.value >= 0.5f) 
         {
-            if(jumpCount < maxJump)
+            Jump();
+
+            Pumping();
+
+            //Stop Speed
+            if (Input.GetButtonUp("Horizontal"))
             {
-                rigid.velocity = new Vector2(rigid.velocity.x, jumpPower);
-                anim.SetBool("isJumpUp", true);
-                anim.SetBool("isJumpDown", true);
-                jumpCount++;
-                energyBar.value--;
+                rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
             }
-        }
 
-        //Stop Speed
-        if (Input.GetButtonUp("Horizontal"))
-        {
-            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
-        }
-
-        if (Input.GetButton("Horizontal"))
-        {
-            spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+            if (Input.GetButton("Horizontal"))
+            {
+                spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+            }
         }
 
         //Animation
@@ -97,44 +91,19 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("isRun", true);
         }
-
-        //Pumping Charging Down
-        if (Input.GetKey(KeyCode.UpArrow) && pumpingBar.value < 1f && energyBar.value >= 1f)
-        {
-            pumping.SetActive(true);
-
-            if (pumpingCount <= maxPumping)
-            {
-                pumpingCount+=3;
-                pumpingBar.value = Mathf.MoveTowards(pumpingBar.value, 1f, Time.deltaTime);
-            }
-        }
-
-        //Pumping Charging Up
-        if (Input.GetKeyUp(KeyCode.UpArrow) && energyBar.value >= 1f)
-        {
-            if (pumpingCount >= 10 && pumpingBar.value >= 0.2)
-            {
-                rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
-                anim.SetBool("isJumpUp", true);
-                anim.SetBool("isJumpDown", true);
-                energyBar.value -= 3;
-            }
-            pumpingCount = 0;
-            pumpingBar.value = 0;
-
-            pumping.SetActive(false);
-        }
     }
 
     private void FixedUpdate()
     {
-        //Move Speed
-        float h = Input.GetAxisRaw("Horizontal");
+        if(energyBar.value >= 0.5f)
+        {
+            //Move Speed
+            float h = Input.GetAxisRaw("Horizontal");
 
-        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+            rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
 
-        rigid.velocity = new Vector2(h * moveSpeed, rigid.velocity.y);
+            rigid.velocity = new Vector2(h * moveSpeed, rigid.velocity.y);
+        }
 
         //Landing Platform
         if (rigid.velocity.y < 0)
@@ -165,6 +134,53 @@ public class Player : MonoBehaviour
                     onDamaged(capsuleCollider.transform.position);
                 }
             }
+        }
+    }
+
+    private void Jump()
+    {
+        //Jump
+        if (Input.GetButtonDown("Jump") && jumpCount < 2 && energyBar.value >= 1f)
+        {
+            if (jumpCount < maxJump)
+            {
+                rigid.velocity = new Vector2(rigid.velocity.x, jumpPower);
+                anim.SetBool("isJumpUp", true);
+                anim.SetBool("isJumpDown", true);
+                jumpCount++;
+                energyBar.value--;
+            }
+        }
+    }
+
+    private void Pumping()
+    {
+        //Pumping Charging Down
+        if (Input.GetKey(KeyCode.UpArrow) && pumpingBar.value < 1f && energyBar.value >= 1f)
+        {
+            pumping.SetActive(true);
+
+            if (pumpingCount <= maxPumping)
+            {
+                pumpingCount += 3;
+                pumpingBar.value = Mathf.MoveTowards(pumpingBar.value, 1f, Time.deltaTime);
+            }
+        }
+
+        //Pumping Charging Up
+        if (Input.GetKeyUp(KeyCode.UpArrow) && energyBar.value >= 1f)
+        {
+            if (pumpingCount >= 10 && pumpingBar.value >= 0.2)
+            {
+                rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
+                anim.SetBool("isJumpUp", true);
+                anim.SetBool("isJumpDown", true);
+                energyBar.value -= 3;
+            }
+            pumpingCount = 0;
+            pumpingBar.value = 0;
+
+            pumping.SetActive(false);
         }
     }
 
@@ -223,18 +239,6 @@ public class Player : MonoBehaviour
         UIReStart.SetActive(true);
 
         anim.SetTrigger("doDied");
-
-        //Sprite Alpha
-        /* spriteRenderer.color = new Color(1, 1, 1, 0.4f);
-
-        //Sprite Filp Y
-        spriteRenderer.flipY = true;
-
-        //Collider Disable
-        capsuleCollider.enabled = false;
-
-        //Die Effect Jump
-        rigid.AddForce(Vector2.up * 0.5f, ForceMode2D.Impulse); */
     }
 
     public void VelocityZero()
