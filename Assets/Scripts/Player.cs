@@ -236,15 +236,10 @@ public class Player : MonoBehaviour
 
     private void onDamaged(Vector2 targetPos, int what)
     {
-        energyBar.value -= what;
-
         int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
 
         if (what == 1)
         {
-            //Energy Down
-            energyBar.value -= what;
-
             //Change Layer (Immortal Active)
             gameObject.layer = 11;
 
@@ -252,7 +247,7 @@ public class Player : MonoBehaviour
             spriteRenderer.color = new Color(1, 1, 1, 0.4f);
 
             //Reaction Force
-            rigid.AddForce(new Vector2(dirc, 0.1f) * 0.5f, ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(dirc, 0.5f) * 0.5f, ForceMode2D.Impulse);
         }
         else if(what == 5)
         {

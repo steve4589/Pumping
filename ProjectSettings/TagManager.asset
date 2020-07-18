@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Item
   - BurstTrap
+  - FenceTrap
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - PlayerDamaged
   - Item
   - BurstTrap
-  - 
+  - FenceTrap
   - 
   - 
   - 

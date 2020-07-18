@@ -263,7 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324e685a8763cd942bd0c8a7d053830c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  burstTrap: {fileID: 134794927}
+  trap: {fileID: 134794927}
+  energyBar: {fileID: 1409624044}
 --- !u!1 &179500190
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324e685a8763cd942bd0c8a7d053830c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  burstTrap: {fileID: 374935244}
+  trap: {fileID: 374935244}
+  energyBar: {fileID: 1409624044}
 --- !u!61 &374935246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3076,9 +3078,10 @@ GameObject:
   - component: {fileID: 1482509206}
   - component: {fileID: 1482509209}
   - component: {fileID: 1482509210}
+  - component: {fileID: 1482509211}
   m_Layer: 9
   m_Name: Trap_1_1
-  m_TagString: Enemy
+  m_TagString: FenceTrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3214,6 +3217,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8125, y: 0.8011708}
   m_EdgeRadius: 0
+--- !u!114 &1482509211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482509205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324e685a8763cd942bd0c8a7d053830c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trap: {fileID: 1482509205}
+  energyBar: {fileID: 1409624044}
 --- !u!1 &1483694134
 GameObject:
   m_ObjectHideFlags: 0
