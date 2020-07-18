@@ -3,12 +3,11 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System;
 
 public class Player : MonoBehaviour
 {
     public GameManager gameManager;
-
-    public GameObject burstTrap;
 
     //플레이어 에너지
     public Slider energyBar;
@@ -29,12 +28,17 @@ public class Player : MonoBehaviour
     int pumpingCount = 0;
 
     Animator anim;
-    Collision2D playerCollision;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     CapsuleCollider2D capsuleCollider;
 
     Vector3 previousPosition = new Vector3();
+
+    public enum LayerName
+    {
+        BasicLayer = 0,
+        DeathLayer = 1
+    }
 
     public void Start()
     {
@@ -67,7 +71,7 @@ public class Player : MonoBehaviour
             energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 1f);
         }
 
-        if(energyBar.value >= 0.5f) 
+        if(energyBar.value >= 0.5f && IsAlive) 
         {
             Jump();
 
@@ -137,6 +141,14 @@ public class Player : MonoBehaviour
                     onDamaged(capsuleCollider.transform.position, 1);
                 }
             }
+        }
+    }
+
+    public bool IsAlive
+    {
+        get
+        {
+            return energyBar.value > 0;
         }
     }
 
@@ -210,8 +222,6 @@ public class Player : MonoBehaviour
 
         if(collision.gameObject.tag == "BurstTrap")
         {
-            anim.SetTrigger("doTouch");
-            
             onDamaged(collision.transform.position, 5);
         }
     }
@@ -228,6 +238,8 @@ public class Player : MonoBehaviour
     {
         energyBar.value -= what;
 
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+
         if (what == 1)
         {
             //Energy Down
@@ -238,14 +250,14 @@ public class Player : MonoBehaviour
 
             //View Alpha
             spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+
+            //Reaction Force
+            rigid.AddForce(new Vector2(dirc, 0.1f) * 0.5f, ForceMode2D.Impulse);
         }
         else if(what == 5)
         {
             //Reaction Force
-            int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
-            rigid.AddForce(new Vector2(dirc, 1) * 2, ForceMode2D.Impulse);
-
-            Destroy(burstTrap, 2);
+            rigid.AddForce(new Vector2(dirc, 3f) * 5f, ForceMode2D.Impulse);
         }
 
         //Animation
@@ -266,7 +278,13 @@ public class Player : MonoBehaviour
 
         UIReStart.SetActive(true);
 
-        anim.SetTrigger("doDied");
+        //anim.SetTrigger("doDied");
+
+        anim.Play("Died");
+
+        gameObject.layer = 11;
+
+        Invoke("VelocityZero", 1);
     }
 
     public void VelocityZero()
