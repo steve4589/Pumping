@@ -19,13 +19,23 @@ public class Trap : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && gameObject.tag == "BurstTrap")
+        if (collision.gameObject.tag == "Player" && gameObject.tag == "MineTrap")
         {
             energyBar.value -= 5;
 
             anim.SetTrigger("doTouch");
 
             Destroy(trap, 0.5f);
+        }
+        else if(collision.gameObject.tag == "Player" && gameObject.tag == "FootTrap")
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+            energyBar.value -= 2;
+
+            anim.SetTrigger("doTouch");
+
+            Destroy(trap, 1.1f);
         }
     }
 
@@ -39,7 +49,16 @@ public class Trap : MonoBehaviour
 
     private void doDamage()
     {
+        gameObject.layer = 14;
+
         //EnergyDown
         energyBar.value -= 1;
+
+        Invoke("offDamage", 0.5f);
+    }
+
+    private void offDamage()
+    {
+        gameObject.layer = 13;
     }
 }

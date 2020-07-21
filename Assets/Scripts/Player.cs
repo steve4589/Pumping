@@ -208,11 +208,6 @@ public class Player : MonoBehaviour
             {
                 //onAttack(collision.transform);
             }
-            else //Damaged
-            {
-                onDamaged(collision.transform.position);
-            }
-            onDamaged(collision.transform.position);
         } */
 
         if(collision.gameObject.tag == "Platform")
@@ -220,18 +215,34 @@ public class Player : MonoBehaviour
             anim.SetBool("isJumpUp", false);
         }
 
-        if(collision.gameObject.tag == "BurstTrap")
+        if(collision.gameObject.tag == "MineTrap")
         {
             onDamaged(collision.transform.position, 5);
+        }
+
+        if(collision.gameObject.tag == "FootTrap")
+        {
+            this.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y);
+
+            moveSpeed = 0;
+
+            Invoke("MoveOn", 1.1f);
+
+            VelocityZero();
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-         if (collision.gameObject.tag == "Enemy")
+         if (collision.gameObject.tag == "FenceTrap")
         {
             onDamaged(collision.transform.position, 1);
         }
+    }
+
+    private void MoveOn()
+    {
+        moveSpeed = 10;
     }
 
     private void onDamaged(Vector2 targetPos, int what)
@@ -272,8 +283,6 @@ public class Player : MonoBehaviour
         energyBar.value = 0f;
 
         UIReStart.SetActive(true);
-
-        //anim.SetTrigger("doDied");
 
         anim.Play("Died");
 

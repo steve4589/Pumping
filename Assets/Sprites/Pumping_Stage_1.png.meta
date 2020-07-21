@@ -581,19 +581,19 @@ TextureImporter:
         serializedVersion: 2
         x: 62
         y: 198
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7.5, y: 8}
-        - {x: -7.5, y: -4}
-        - {x: 4.5, y: -4}
-        - {x: 7.5, y: -3}
-        - {x: 7.5, y: 6}
-        - {x: 4.5, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -4}
+        - {x: 4, y: -4}
+        - {x: 7, y: -1}
+        - {x: 7, y: 5}
+        - {x: 4, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: ca68522ae9ac5ff50800000000000000
@@ -608,18 +608,18 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 198
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -7.5, y: 8}
-        - {x: -7.5, y: -4}
-        - {x: 7.5, y: -4}
-        - {x: 7.5, y: 6}
-        - {x: 4.5, y: 8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -4}
+        - {x: 7, y: -4}
+        - {x: 7, y: 5}
+        - {x: 4, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 9e3e26183b3f0cbe0800000000000000
@@ -659,21 +659,21 @@ TextureImporter:
       name: Pumping_Stage_1_9
       rect:
         serializedVersion: 2
-        x: 119
+        x: 118
         y: 198
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -4.5, y: 8}
-        - {x: -7.5, y: 6}
-        - {x: -7.5, y: -2}
-        - {x: -4.5, y: -4}
-        - {x: 7.5, y: -4}
-        - {x: 7.5, y: 8}
+      - - {x: -4, y: 8}
+        - {x: -7, y: 5}
+        - {x: -7, y: -1}
+        - {x: -4, y: -4}
+        - {x: 8, y: -4}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 54f23f053141c07f0800000000000000
