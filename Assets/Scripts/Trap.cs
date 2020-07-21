@@ -8,7 +8,7 @@ public class Trap : MonoBehaviour
 {
     public GameObject trap;
 
-    public Slider energyBar;
+    public GameManager gameManager;
 
     Animator anim;
 
@@ -21,7 +21,7 @@ public class Trap : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && gameObject.tag == "MineTrap")
         {
-            energyBar.value -= 5;
+            gameManager.energyBar.value -= 5;
 
             anim.SetTrigger("doTouch");
 
@@ -31,7 +31,7 @@ public class Trap : MonoBehaviour
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-            energyBar.value -= 2;
+            gameManager.energyBar.value -= 2;
 
             anim.SetTrigger("doTouch");
 
@@ -52,7 +52,7 @@ public class Trap : MonoBehaviour
         gameObject.layer = 14;
 
         //EnergyDown
-        energyBar.value -= 1;
+        gameManager.energyBar.value -= 1;
 
         Invoke("offDamage", 0.5f);
     }

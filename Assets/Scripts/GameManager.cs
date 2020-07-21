@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int stageIndex;
-
     public Player playerMv;
+
+    public Slider energyBar;
+    public Slider pumpingBar;
+    public GameObject pumping;
 
     public GameObject menuSet;
     public GameObject player;
 
+    public int stageIndex;
     public string gaSc;
+    public float pumpingGauge;
 
     void Awake()
     {
@@ -23,7 +27,24 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        energyBar.value = 10;
         //GameLoad();
+    }
+
+    public void Update()
+    {
+        //Sub Menu
+        if (stageIndex != 0 && Input.GetButtonDown("Cancel"))
+        {
+            if (menuSet.activeSelf)
+            {
+                menuSet.SetActive(false);
+            }
+            else
+            {
+                menuSet.SetActive(true);
+            }
+        }
     }
 
     public void NextStage()
@@ -37,25 +58,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Stage_2");
     }
 
-    void PlayerReposition()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerMv.transform.position = new Vector3(0, 0, -1);
-        playerMv.VelocityZero();
-    }
-
-    public void Update()
-    {
-        //Sub Menu
-        if (stageIndex!=0&&Input.GetButtonDown("Cancel"))
+        if(collision.gameObject.tag == "Player")
         {
-            if (menuSet.activeSelf)
-            {
-                menuSet.SetActive(false);
-            }
-            else
-            {
-                menuSet.SetActive(true);
-            }
+            playerMv.onDie();
         }
     }
 

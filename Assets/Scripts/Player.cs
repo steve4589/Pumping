@@ -9,13 +9,6 @@ public class Player : MonoBehaviour
 {
     public GameManager gameManager;
 
-    //플레이어 에너지
-    public Slider energyBar;
-
-    //플레이어 펌핑(차징)
-    public GameObject pumping;
-    public Slider pumpingBar;
-
     //게임 중 사망 시 다시 시작 버튼
     public GameObject UIReStart;
 
@@ -42,7 +35,7 @@ public class Player : MonoBehaviour
 
     public void Start()
     {
-        energyBar.value = 10;
+        
     }
 
     private void Awake()
@@ -62,16 +55,16 @@ public class Player : MonoBehaviour
 
         this.previousPosition = this.transform.position;
 
-        if(energyBar.value <= 0.5f)
+        if(gameManager.energyBar.value <= 0.5f)
         {
             onDie();
         }
         else
         {
-            energyBar.value = Mathf.MoveTowards(energyBar.value, 10f, Time.deltaTime * 1f);
+            gameManager.energyBar.value = Mathf.MoveTowards(gameManager.energyBar.value, 10f, Time.deltaTime * 1f);
         }
 
-        if(energyBar.value >= 0.5f && IsAlive) 
+        if(gameManager.energyBar.value >= 0.5f && IsAlive) 
         {
             Jump();
 
@@ -102,7 +95,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(energyBar.value >= 0.5f)
+        if(gameManager.energyBar.value >= 0.5f)
         {
             //Move Speed
             float h = Input.GetAxisRaw("Horizontal");
@@ -148,14 +141,14 @@ public class Player : MonoBehaviour
     {
         get
         {
-            return energyBar.value > 0;
+            return gameManager.energyBar.value > 0;
         }
     }
 
     private void Jump()
     {
         //Jump
-        if (Input.GetButtonDown("Jump") && jumpCount < 2 && energyBar.value >= 1f)
+        if (Input.GetButtonDown("Jump") && jumpCount < 2 && gameManager.energyBar.value >= 1f)
         {
             if (jumpCount < maxJump)
             {
@@ -163,7 +156,7 @@ public class Player : MonoBehaviour
                 anim.SetBool("isJumpUp", true);
                 anim.SetBool("isJumpDown", true);
                 jumpCount++;
-                energyBar.value--;
+                gameManager.energyBar.value--;
             }
         }
     }
@@ -171,31 +164,33 @@ public class Player : MonoBehaviour
     private void Pumping()
     {
         //Pumping Charging Down
-        if (Input.GetKey(KeyCode.UpArrow) && pumpingBar.value < 1f && energyBar.value >= 1f)
+        if (Input.GetKey(KeyCode.UpArrow) && gameManager.pumpingBar.value < 1f && gameManager.energyBar.value >= 1f)
         {
-            pumping.SetActive(true);
+            gameManager.pumping.SetActive(true);
 
             if (pumpingCount <= maxPumping)
             {
                 pumpingCount += 3;
-                pumpingBar.value = Mathf.MoveTowards(pumpingBar.value, 1f, Time.deltaTime);
+                gameManager.pumpingBar.value = Mathf.MoveTowards(gameManager.pumpingBar.value, 1f, Time.deltaTime);
+                gameManager.pumpingGauge = Mathf.MoveTowards(gameManager.pumpingGauge, 1f, Time.deltaTime);
             }
         }
 
         //Pumping Charging Up
-        if (Input.GetKeyUp(KeyCode.UpArrow) && energyBar.value >= 1f)
+        if (Input.GetKeyUp(KeyCode.UpArrow) && gameManager.energyBar.value >= 1f)
         {
-            if (pumpingCount >= 10 && pumpingBar.value >= 0.2)
+            if (pumpingCount >= 10 && gameManager.pumpingBar.value >= 0.2)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
                 anim.SetBool("isJumpUp", true);
                 anim.SetBool("isJumpDown", true);
-                energyBar.value -= 3;
+                gameManager.energyBar.value -= 3;
             }
             pumpingCount = 0;
-            pumpingBar.value = 0;
+            gameManager.pumpingBar.value = 0;
+            gameManager.pumpingGauge = 0;
 
-            pumping.SetActive(false);
+            gameManager.pumping.SetActive(false);
         }
     }
 
@@ -280,7 +275,7 @@ public class Player : MonoBehaviour
 
     public void onDie()
     {
-        energyBar.value = 0f;
+        gameManager.energyBar.value = 0f;
 
         UIReStart.SetActive(true);
 
