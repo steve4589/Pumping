@@ -26,21 +26,26 @@ public class PumpingGauge : MonoBehaviour
         if (gameManager.pumpingGauge <= 0.1f)
         {
             //anim.Play("Empty");
-            anim.SetBool("isHalf", false);
-            anim.SetBool("isFull", false);
-            pumpingImage.sprite = emptySprite;
+            //anim.SetBool("isHalf", false);
+            //anim.SetBool("isFull", false);
+            //pumpingImage.sprite = emptySprite;
+            gameObject.GetComponent<Image>().sprite = emptySprite;
         }
         else if (gameManager.pumpingGauge >= 0.1f && gameManager.pumpingGauge <= 0.6f)
         {
             //anim.Play("Half");
-            anim.SetBool("isHalf", true);
-            pumpingImage.sprite = halfSprite;
+            //anim.SetBool("isHalf", true);
+            //anim.SetBool("isFull", false);
+            //pumpingImage.sprite = halfSprite;
+            gameObject.GetComponent<Image>().sprite = halfSprite;
         }
         else if (gameManager.pumpingGauge >= 0.9f)
         {
             //anim.Play("Full");
-            anim.SetBool("isFull", true);
-            pumpingImage.sprite = fullSprite;
+            //anim.SetBool("isHalf", false);
+            //anim.SetBool("isFull", true);
+            //pumpingImage.sprite = fullSprite;
+            gameObject.GetComponent<Image>().sprite = fullSprite;
         }
     }
 }

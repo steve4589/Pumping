@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trap: {fileID: 134794927}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 382524962}
 --- !u!1 &179500190
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trap: {fileID: 374935244}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 382524962}
 --- !u!61 &374935246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62fd58663ab8ff848b513fa4c86f829f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dcd210622e6db074f8e1ea0ef5102609, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -955,7 +955,7 @@ Animator:
   m_GameObject: {fileID: 764712747}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: feca3e7407438d94194db53f80937425, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6ae1b0a003936da498f73716326767ae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4454,7 +4454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trap: {fileID: 1021500175}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 382524962}
 --- !u!61 &1021500180
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5107,7 +5107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trap: {fileID: 1482509205}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 382524962}
 --- !u!1 &1483694134
 GameObject:
   m_ObjectHideFlags: 0
