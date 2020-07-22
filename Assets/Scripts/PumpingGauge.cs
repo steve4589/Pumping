@@ -11,19 +11,27 @@ public class PumpingGauge : MonoBehaviour
     public Image pumpingImage;
     public Sprite emptySprite;
     public Sprite halfSprite;
-    public Sprite fullSprite;
+    public Sprite fullSprite1;
+    public Sprite fullSprite2;
 
     Animator anim;
 
+    private float timer;
+    private float waitingTime;
+
+    private int count = 0;
+
     void Start()
     {
+        timer = 0.0f;
+        waitingTime = 0.2f;
         pumpingImage = GetComponent<Image>();
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (gameManager.pumpingGauge <= 0.1f)
+        if (gameManager.pumpingGauge < 0.1f)
         {
             //anim.Play("Empty");
             //anim.SetBool("isHalf", false);
@@ -31,7 +39,7 @@ public class PumpingGauge : MonoBehaviour
             //pumpingImage.sprite = emptySprite;
             gameObject.GetComponent<Image>().sprite = emptySprite;
         }
-        else if (gameManager.pumpingGauge >= 0.1f && gameManager.pumpingGauge <= 0.6f)
+        else if (gameManager.pumpingGauge >= 0.1f && gameManager.pumpingGauge < 0.9f)
         {
             //anim.Play("Half");
             //anim.SetBool("isHalf", true);
@@ -41,11 +49,28 @@ public class PumpingGauge : MonoBehaviour
         }
         else if (gameManager.pumpingGauge >= 0.9f)
         {
-            //anim.Play("Full");
-            //anim.SetBool("isHalf", false);
-            //anim.SetBool("isFull", true);
-            //pumpingImage.sprite = fullSprite;
-            gameObject.GetComponent<Image>().sprite = fullSprite;
+            timer += Time.deltaTime;
+
+            count++;
+
+            if (timer > waitingTime)
+            {
+                FullSprite();
+                timer = 0;
+                count = 0;
+            }
+        }
+    }
+
+    private void FullSprite()
+    {
+        if (count % 2 != 0)
+        {
+            gameObject.GetComponent<Image>().sprite = fullSprite1;
+        }
+        else
+        {
+            gameObject.GetComponent<Image>().sprite = fullSprite2;
         }
     }
 }

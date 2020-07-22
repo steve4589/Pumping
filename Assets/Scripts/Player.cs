@@ -8,6 +8,7 @@ using System;
 public class Player : MonoBehaviour
 {
     public GameManager gameManager;
+    public PumpingGauge pumpingGauge;
 
     //게임 중 사망 시 다시 시작 버튼
     public GameObject UIReStart;
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour
 
     public void Start()
     {
-        
+        gameManager.energyBar.value = 10f;
     }
 
     private void Awake()
@@ -155,8 +156,8 @@ public class Player : MonoBehaviour
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower);
                 anim.SetBool("isJumpUp", true);
                 anim.SetBool("isJumpDown", true);
-                jumpCount++;
                 gameManager.energyBar.value--;
+                jumpCount++;
             }
         }
     }
@@ -164,14 +165,14 @@ public class Player : MonoBehaviour
     private void Pumping()
     {
         //Pumping Charging Down
-        if (Input.GetKey(KeyCode.UpArrow) && gameManager.pumpingBar.value < 1f && gameManager.energyBar.value >= 1f)
+        if (Input.GetKey(KeyCode.UpArrow) && gameManager.pumpingGauge < 1f && gameManager.energyBar.value >= 1f)
         {
             gameManager.pumping.SetActive(true);
 
             if (pumpingCount <= maxPumping)
             {
                 pumpingCount += 3;
-                gameManager.pumpingBar.value = Mathf.MoveTowards(gameManager.pumpingBar.value, 1f, Time.deltaTime);
+                //gameManager.pumpingBar.value = Mathf.MoveTowards(gameManager.pumpingBar.value, 1f, Time.deltaTime);
                 gameManager.pumpingGauge = Mathf.MoveTowards(gameManager.pumpingGauge, 1f, Time.deltaTime);
             }
         }
@@ -179,7 +180,7 @@ public class Player : MonoBehaviour
         //Pumping Charging Up
         if (Input.GetKeyUp(KeyCode.UpArrow) && gameManager.energyBar.value >= 1f)
         {
-            if (pumpingCount >= 10 && gameManager.pumpingBar.value >= 0.2)
+            if (pumpingCount >= 10 && gameManager.pumpingGauge >= 0.2)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower * pumpingCount / 100);
                 anim.SetBool("isJumpUp", true);
@@ -191,6 +192,7 @@ public class Player : MonoBehaviour
             gameManager.pumpingGauge = 0;
 
             gameManager.pumping.SetActive(false);
+            gameManager.pumping.GetComponent<Image>().sprite = pumpingGauge.emptySprite;
         }
     }
 

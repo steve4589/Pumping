@@ -635,7 +635,7 @@ MonoBehaviour:
   playerMv: {fileID: 867833570}
   energyBar: {fileID: 1409624044}
   pumpingBar: {fileID: 907277893}
-  pumping: {fileID: 907277891}
+  pumping: {fileID: 764712747}
   menuSet: {fileID: 1990397032}
   player: {fileID: 867833567}
   stageIndex: 2
@@ -888,7 +888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &764712748
 RectTransform:
   m_ObjectHideFlags: 0
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dcd210622e6db074f8e1ea0ef5102609, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62fd58663ab8ff848b513fa4c86f829f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -980,7 +980,8 @@ MonoBehaviour:
   pumpingImage: {fileID: 764712749}
   emptySprite: {fileID: 21300000, guid: 62fd58663ab8ff848b513fa4c86f829f, type: 3}
   halfSprite: {fileID: 21300000, guid: fd77db15da33e754cb2443d5271be6b9, type: 3}
-  fullSprite: {fileID: 21300000, guid: 3f6ec831245a20c48bc68ee619c36a90, type: 3}
+  fullSprite1: {fileID: 21300000, guid: 3f6ec831245a20c48bc68ee619c36a90, type: 3}
+  fullSprite2: {fileID: 21300000, guid: dcd210622e6db074f8e1ea0ef5102609, type: 3}
 --- !u!1 &834800059
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,6 +6225,11 @@ PrefabInstance:
       propertyPath: burstTrap
       value: 
       objectReference: {fileID: 134794927}
+    - target: {fileID: 5983153266675876626, guid: 26308f2af6a0d8e48ab838b8a9ba2bc4,
+        type: 3}
+      propertyPath: pumpingGauge
+      value: 
+      objectReference: {fileID: 764712752}
     - target: {fileID: 5983153266675876628, guid: 26308f2af6a0d8e48ab838b8a9ba2bc4,
         type: 3}
       propertyPath: m_Offset.y

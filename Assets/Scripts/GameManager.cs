@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        energyBar.value = 10;
         //GameLoad();
     }
 
