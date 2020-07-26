@@ -12,7 +12,7 @@ public class MiniMap : MonoBehaviour
     Transform caMove;
 
     //cameraSpeed
-    public int cameraSpeed;
+    protected float cameraSpeed = 0.5f;
 
     void Start()
     {
@@ -38,22 +38,22 @@ public class MiniMap : MonoBehaviour
         {
             //caMove.position = Vector3.Lerp(caMove.position, caMove.position, 2f * Time.deltaTime);
 
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKey(KeyCode.J))
             {
                 caMove.Translate(-(cameraSpeed), 0, 0);
             }
 
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKey(KeyCode.L))
             {
                 caMove.Translate(cameraSpeed, 0, 0);
             }
 
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKey(KeyCode.I))
             {
                 caMove.Translate(0, cameraSpeed, 0);
             }
 
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKey(KeyCode.K))
             {
                 caMove.Translate(0, (-cameraSpeed), 0);
             }

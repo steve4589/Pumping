@@ -9,9 +9,8 @@ public class GameManager : MonoBehaviour
     public Player playerMv;
 
     public Slider energyBar;
-    public Slider pumpingBar;
-    public GameObject pumping;
 
+    public GameObject pumping;
     public GameObject menuSet;
     public GameObject player;
 

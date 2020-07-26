@@ -1,0 +1,2894 @@
+fileFormatVersion: 2
+guid: e18ea95de4eba9e449b83826b9545292
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9155068052492664362
+    second: Pumping_Stage_2_0
+  - first:
+      213: 2626217720343756798
+    second: Pumping_Stage_2_1
+  - first:
+      213: 8053079228782630616
+    second: Pumping_Stage_2_2
+  - first:
+      213: 7286039199110353239
+    second: Pumping_Stage_2_3
+  - first:
+      213: -7880191160778112603
+    second: Pumping_Stage_2_4
+  - first:
+      213: -7557064235652067860
+    second: Pumping_Stage_2_5
+  - first:
+      213: -795777811047621559
+    second: Pumping_Stage_2_6
+  - first:
+      213: -1708124925171156433
+    second: Pumping_Stage_2_7
+  - first:
+      213: -7850243445634107568
+    second: Pumping_Stage_2_8
+  - first:
+      213: 4020125832305354881
+    second: Pumping_Stage_2_9
+  - first:
+      213: 7337304919535648363
+    second: Pumping_Stage_2_10
+  - first:
+      213: -6148459837055927107
+    second: Pumping_Stage_2_11
+  - first:
+      213: 8524774060578226611
+    second: Pumping_Stage_2_12
+  - first:
+      213: -6723289977688596394
+    second: Pumping_Stage_2_13
+  - first:
+      213: -3359394750297415318
+    second: Pumping_Stage_2_14
+  - first:
+      213: -4949879926605367014
+    second: Pumping_Stage_2_15
+  - first:
+      213: 1607968222253334464
+    second: Pumping_Stage_2_16
+  - first:
+      213: 8407794385451113566
+    second: Pumping_Stage_2_17
+  - first:
+      213: -4958963396004648296
+    second: Pumping_Stage_2_18
+  - first:
+      213: -8288607713670417245
+    second: Pumping_Stage_2_19
+  - first:
+      213: 6192117679874330899
+    second: Pumping_Stage_2_20
+  - first:
+      213: -1914677851047635717
+    second: Pumping_Stage_2_21
+  - first:
+      213: 2773228088199120279
+    second: Pumping_Stage_2_22
+  - first:
+      213: -3062324726512615021
+    second: Pumping_Stage_2_23
+  - first:
+      213: -4928444863759146475
+    second: Pumping_Stage_2_24
+  - first:
+      213: -6906963720993756367
+    second: Pumping_Stage_2_25
+  - first:
+      213: -3320334815653017630
+    second: Pumping_Stage_2_26
+  - first:
+      213: 5960296414839477650
+    second: Pumping_Stage_2_27
+  - first:
+      213: 5255040201060479579
+    second: Pumping_Stage_2_28
+  - first:
+      213: 2264563910075604538
+    second: Pumping_Stage_2_29
+  - first:
+      213: -7267324129824385558
+    second: Pumping_Stage_2_30
+  - first:
+      213: -4522246374027009325
+    second: Pumping_Stage_2_31
+  - first:
+      213: 2489434007242019553
+    second: Pumping_Stage_2_32
+  - first:
+      213: -8674770405599416698
+    second: Pumping_Stage_2_33
+  - first:
+      213: 459333440747292575
+    second: Pumping_Stage_2_34
+  - first:
+      213: -8225646097831981863
+    second: Pumping_Stage_2_35
+  - first:
+      213: 7562077418481232840
+    second: Pumping_Stage_2_36
+  - first:
+      213: -6641367174997556846
+    second: Pumping_Stage_2_37
+  - first:
+      213: 2448097493307417459
+    second: Pumping_Stage_2_38
+  - first:
+      213: -3797126346917548662
+    second: Pumping_Stage_2_39
+  - first:
+      213: 51089706772165484
+    second: Pumping_Stage_2_40
+  - first:
+      213: 3597930276761222693
+    second: Pumping_Stage_2_41
+  - first:
+      213: -1698398783414227046
+    second: Pumping_Stage_2_42
+  - first:
+      213: -6268182739245246096
+    second: Pumping_Stage_2_43
+  - first:
+      213: 2517083397293083575
+    second: Pumping_Stage_2_44
+  - first:
+      213: -9007364478290773297
+    second: Pumping_Stage_2_45
+  - first:
+      213: 150955377763412592
+    second: Pumping_Stage_2_46
+  - first:
+      213: -1367980543904069860
+    second: Pumping_Stage_2_47
+  - first:
+      213: -8485264692513785559
+    second: Pumping_Stage_2_48
+  - first:
+      213: 782308309120378966
+    second: Pumping_Stage_2_49
+  - first:
+      213: 3064299876780905360
+    second: Pumping_Stage_2_50
+  - first:
+      213: 1832612200376014551
+    second: Pumping_Stage_2_51
+  - first:
+      213: -5839054638868817844
+    second: Pumping_Stage_2_52
+  - first:
+      213: -7601302581256558087
+    second: Pumping_Stage_2_53
+  - first:
+      213: -2580299261939952349
+    second: Pumping_Stage_2_54
+  - first:
+      213: 6871743814748246587
+    second: Pumping_Stage_2_55
+  - first:
+      213: 6576357009267353587
+    second: Pumping_Stage_2_56
+  - first:
+      213: -6607449635467600887
+    second: Pumping_Stage_2_57
+  - first:
+      213: -7675613943388310335
+    second: Pumping_Stage_2_58
+  - first:
+      213: -5193720240160981234
+    second: Pumping_Stage_2_59
+  - first:
+      213: -382659694703869711
+    second: Pumping_Stage_2_60
+  - first:
+      213: -6601807908173711321
+    second: Pumping_Stage_2_61
+  - first:
+      213: -7174943967741655630
+    second: Pumping_Stage_2_62
+  - first:
+      213: -6662392787567447269
+    second: Pumping_Stage_2_63
+  - first:
+      213: 3267187705186321068
+    second: Pumping_Stage_2_64
+  - first:
+      213: 600102105960371982
+    second: Pumping_Stage_2_65
+  - first:
+      213: 7717538480033162623
+    second: Pumping_Stage_2_66
+  - first:
+      213: 7112817772797001828
+    second: Pumping_Stage_2_67
+  - first:
+      213: 8668032301082654827
+    second: Pumping_Stage_2_68
+  - first:
+      213: 1478880591689618494
+    second: Pumping_Stage_2_69
+  - first:
+      213: -1272721364711523990
+    second: Pumping_Stage_2_70
+  - first:
+      213: 4325347407532623916
+    second: Pumping_Stage_2_71
+  - first:
+      213: -3155146905168372938
+    second: Pumping_Stage_2_72
+  - first:
+      213: 194532765069697630
+    second: Pumping_Stage_2_73
+  - first:
+      213: -5743026808687776672
+    second: Pumping_Stage_2_74
+  - first:
+      213: -5405749255534782245
+    second: Pumping_Stage_2_75
+  - first:
+      213: -3729246050151263733
+    second: Pumping_Stage_2_76
+  - first:
+      213: -8030557107470690956
+    second: Pumping_Stage_2_77
+  - first:
+      213: 5540109135631720606
+    second: Pumping_Stage_2_78
+  - first:
+      213: -2748754187818906547
+    second: Pumping_Stage_2_79
+  - first:
+      213: -328136075874487131
+    second: Pumping_Stage_2_80
+  - first:
+      213: -8603825375017393377
+    second: Pumping_Stage_2_81
+  - first:
+      213: 2565932599780921546
+    second: Pumping_Stage_2_82
+  - first:
+      213: -6506912503759842153
+    second: Pumping_Stage_2_83
+  - first:
+      213: 6399444750325452327
+    second: Pumping_Stage_2_84
+  - first:
+      213: -3235732389152702885
+    second: Pumping_Stage_2_85
+  - first:
+      213: -4206765081964834664
+    second: Pumping_Stage_2_86
+  - first:
+      213: 3361103255422788855
+    second: Pumping_Stage_2_87
+  - first:
+      213: -1050387303124244077
+    second: Pumping_Stage_2_88
+  - first:
+      213: 6487173589759512264
+    second: Pumping_Stage_2_89
+  - first:
+      213: 635017744400536141
+    second: Pumping_Stage_2_90
+  - first:
+      213: -3669394479244071535
+    second: Pumping_Stage_2_91
+  - first:
+      213: 2861476504808980364
+    second: Pumping_Stage_2_92
+  - first:
+      213: -4180866853094508733
+    second: Pumping_Stage_2_93
+  - first:
+      213: 8536044662344942989
+    second: Pumping_Stage_2_94
+  - first:
+      213: -4996003637529936892
+    second: Pumping_Stage_2_95
+  - first:
+      213: 4239807596489874440
+    second: Pumping_Stage_2_96
+  - first:
+      213: 7933967949410240657
+    second: Pumping_Stage_2_97
+  - first:
+      213: 3556657462635001066
+    second: Pumping_Stage_2_98
+  - first:
+      213: -96303698802390870
+    second: Pumping_Stage_2_99
+  - first:
+      213: 5375862941281997561
+    second: Pumping_Stage_2_100
+  - first:
+      213: -6068705186745844344
+    second: Pumping_Stage_2_101
+  - first:
+      213: -902723492363230176
+    second: Pumping_Stage_2_102
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pumping_Stage_2_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: -5}
+        - {x: 6, y: -5}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e3a5b53e55d0f70800000000000000
+      internalID: 9155068052492664362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -8}
+        - {x: -3, y: -6}
+        - {x: -1, y: -4}
+        - {x: 1, y: -4}
+        - {x: 2, y: -5}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efffce33a13327420800000000000000
+      internalID: 2626217720343756798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 194
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3.5, y: -7.5}
+        - {x: -3.5, y: 0.5}
+        - {x: 0.5, y: 7.5}
+        - {x: 2.5, y: 6.5}
+        - {x: 2.5, y: -2.5}
+        - {x: 3.5, y: -7.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d65aab34e842cf60800000000000000
+      internalID: 8053079228782630616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 194
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -7}
+        - {x: -4, y: 6}
+        - {x: -2, y: 7}
+        - {x: 3, y: 1}
+        - {x: 4, y: -2}
+        - {x: 4, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7515b8a6c063d1560800000000000000
+      internalID: 7286039199110353239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: -8}
+        - {x: -5, y: -6}
+        - {x: -1, y: -3}
+        - {x: 2, y: -3}
+        - {x: 4, y: -5}
+        - {x: 5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1c5abe3efe3a290800000000000000
+      internalID: -7880191160778112603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -8}
+        - {x: -6, y: -6}
+        - {x: -4, y: -4}
+        - {x: -3, y: -1}
+        - {x: -2, y: 3}
+        - {x: 0, y: 6}
+        - {x: 2, y: 5}
+        - {x: 3, y: 2}
+        - {x: 5, y: -5}
+        - {x: 6, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced4621ed1aef1790800000000000000
+      internalID: -7557064235652067860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -8}
+        - {x: -1, y: -2}
+        - {x: -6, y: -1}
+        - {x: -6, y: 4}
+        - {x: -5, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 7}
+        - {x: 1, y: 7}
+        - {x: 1, y: 5}
+        - {x: 5, y: 5}
+        - {x: 6, y: 4}
+        - {x: 6, y: -1}
+        - {x: 1, y: -2}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c5e5c0c44d4f4f0800000000000000
+      internalID: -795777811047621559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -3}
+        - {x: 2, y: -8}
+        - {x: -2, y: -8}
+        - {x: -1, y: -3}
+        - {x: -8, y: -3}
+        - {x: -8, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 7}
+        - {x: 1, y: 7}
+        - {x: 1, y: 5}
+        - {x: 8, y: 5}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2abe2b3e658b48e0800000000000000
+      internalID: -1708124925171156433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_8
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -8}
+        - {x: 5, y: -3}
+        - {x: -2, y: -3}
+        - {x: -2, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 7}
+        - {x: 7, y: 7}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057f3a6bd255e0390800000000000000
+      internalID: -7850243445634107568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -7, y: 7}
+        - {x: -5, y: 7}
+        - {x: -5, y: 5}
+        - {x: 2, y: 5}
+        - {x: 2, y: -3}
+        - {x: -5, y: -3}
+        - {x: -4, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188aeea152b5ac730800000000000000
+      internalID: 4020125832305354881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_10
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 2}
+        - {x: -5, y: 5}
+        - {x: 4, y: 5}
+        - {x: 6, y: 2}
+        - {x: 7, y: -3}
+        - {x: 8, y: -5}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ef5a913f753d560800000000000000
+      internalID: 7337304919535648363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: -8}
+        - {x: -5, y: -5}
+        - {x: -1, y: 8}
+        - {x: 2, y: 7}
+        - {x: 4, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc7688aa584caaa0800000000000000
+      internalID: -6148459837055927107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -8}
+        - {x: -2, y: -7}
+        - {x: -3, y: -3}
+        - {x: -1, y: 8}
+        - {x: 1, y: 8}
+        - {x: 3, y: 5}
+        - {x: 3, y: 2}
+        - {x: 1, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1ca3787d41e4670800000000000000
+      internalID: 8524774060578226611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 171
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -9, y: -8}
+        - {x: -14, y: 0}
+        - {x: -14, y: 5}
+        - {x: -8, y: 7}
+        - {x: 8, y: 7}
+        - {x: 14, y: 5}
+        - {x: 14, y: 0}
+        - {x: 9, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6506de5036312b2a0800000000000000
+      internalID: -6723289977688596394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -8}
+        - {x: -4, y: -3}
+        - {x: -4, y: 8}
+        - {x: 1, y: 8}
+        - {x: 6, y: 5}
+        - {x: 2, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61e53006480161d0800000000000000
+      internalID: -3359394750297415318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_15
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19b9ddae6e7e4bb0800000000000000
+      internalID: -4949879926605367014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_16
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfb6892496a05610800000000000000
+      internalID: 1607968222253334464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c5659727c7ea470800000000000000
+      internalID: 8407794385451113566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a6af6a0193e2bb0800000000000000
+      internalID: -4958963396004648296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4bc180333f8fc80800000000000000
+      internalID: -8288607713670417245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311535cf832dee550800000000000000
+      internalID: 6192117679874330899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_21
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf45ffc83a2bd65e0800000000000000
+      internalID: -1914677851047635717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_22
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7958e36c04c7c7620800000000000000
+      internalID: 2773228088199120279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_23
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3910259d2ef6085d0800000000000000
+      internalID: -3062324726512615021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_24
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 146
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512a9882285aa9bb0800000000000000
+      internalID: -4928444863759146475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b28a527198520a0800000000000000
+      internalID: -6906963720993756367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_26
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 124
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7c3a9b31dcbe1d0800000000000000
+      internalID: -3320334815653017630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_27
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2959a82a20a37b250800000000000000
+      internalID: 5960296414839477650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_28
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b527b907837ade840800000000000000
+      internalID: 5255040201060479579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_29
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ed937c0e85d6f10800000000000000
+      internalID: 2264563910075604538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_30
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae551363537452b90800000000000000
+      internalID: -7267324129824385558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_31
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d26259f1e0cd31c0800000000000000
+      internalID: -4522246374027009325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_32
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 122
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2107d3a0f3c8220800000000000000
+      internalID: 2489434007242019553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eec2ae6460d9780800000000000000
+      internalID: -8674770405599416698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_34
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f974339a451ef5600800000000000000
+      internalID: 459333440747292575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_35
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc85a29472a8dd80800000000000000
+      internalID: -8225646097831981863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_36
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -4}
+        - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 7, y: 5}
+        - {x: 7, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cba394b855e1f860800000000000000
+      internalID: 7562077418481232840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 7, y: 4}
+        - {x: 7, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291c457edbf15d3a0800000000000000
+      internalID: -6641367174997556846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -4}
+        - {x: -7, y: 5}
+        - {x: -3, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373ec1813b369f120800000000000000
+      internalID: 2448097493307417459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_39
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -4}
+        - {x: -7, y: -2}
+        - {x: -7, y: 5}
+        - {x: -3, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8de3bc94b5ed4bc0800000000000000
+      internalID: -3797126346917548662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_40
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -4}
+        - {x: -3, y: -4}
+        - {x: -7, y: -2}
+        - {x: -7, y: 5}
+        - {x: -4, y: 8}
+        - {x: 4, y: 8}
+        - {x: 7, y: 5}
+        - {x: 7, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6375df41d185b000800000000000000
+      internalID: 51089706772165484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_41
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eb9f8268a6ee130800000000000000
+      internalID: 3597930276761222693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fa3a31e431e68e0800000000000000
+      internalID: -1698398783414227046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_43
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 7, y: 5}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0795d084201f209a0800000000000000
+      internalID: -6268182739245246096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_44
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 5}
+        - {x: -4, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb00b5830a7ee220800000000000000
+      internalID: 2517083397293083575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_45
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 6}
+        - {x: -4, y: 8}
+        - {x: 4, y: 8}
+        - {x: 7, y: 6}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcab105eab96ff280800000000000000
+      internalID: -9007364478290773297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_46
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -8}
+        - {x: -8, y: -3}
+        - {x: -8, y: 8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ae584cd1d481200800000000000000
+      internalID: 150955377763412592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_47
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 8}
+        - {x: -3, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17c3f471f4f30de0800000000000000
+      internalID: -1367980543904069860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_48
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: -8, y: -8}
+        - {x: -8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9293d8118b84e3a80800000000000000
+      internalID: -8485264692513785559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_49
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -3}
+        - {x: -8, y: 8}
+        - {x: 3, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658e4f523415bda00800000000000000
+      internalID: 782308309120378966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_50
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 6}
+        - {x: 1, y: -8}
+        - {x: -1, y: -8}
+        - {x: -1, y: 3}
+        - {x: -8, y: -3}
+        - {x: -8, y: 8}
+        - {x: 3, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0939cc8a084968a20800000000000000
+      internalID: 3064299876780905360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 4}
+        - {x: 1, y: -8}
+        - {x: -1, y: -8}
+        - {x: -1, y: 5}
+        - {x: -3, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6957e261fbe6910800000000000000
+      internalID: 1832612200376014551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_52
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48902a1eb287fea0800000000000000
+      internalID: -5839054638868817844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_53
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f961f5639fb28690800000000000000
+      internalID: -7601302581256558087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_54
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325ddd50e7fe03cd0800000000000000
+      internalID: -2580299261939952349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_55
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b329e8967965d5f50800000000000000
+      internalID: 6871743814748246587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_56
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7e78d5bd9e34b50800000000000000
+      internalID: 6576357009267353587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_57
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c5ba6709f9d44a0800000000000000
+      internalID: -6607449635467600887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_58
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4fd4f19cdba7590800000000000000
+      internalID: -7675613943388310335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_59
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fb27685f23ce7b0800000000000000
+      internalID: -5193720240160981234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_60
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0015bf80580baf0800000000000000
+      internalID: -382659694703869711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_61
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728f0f57faaa164a0800000000000000
+      internalID: -6601807908173711321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_62
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b54d6fc97a7d6c90800000000000000
+      internalID: -7174943967741655630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_63
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -3}
+        - {x: -8, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13faeefe0d6a83a0800000000000000
+      internalID: -6662392787567447269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_64
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -3}
+        - {x: -8, y: 6}
+        - {x: 8, y: 6}
+        - {x: 8, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2872658e1675d20800000000000000
+      internalID: 3267187705186321068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -8}
+        - {x: -8, y: -8}
+        - {x: -8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e075bb69fadf35800800000000000000
+      internalID: 600102105960371982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_66
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75e8cabb543a1b60800000000000000
+      internalID: 7717538480033162623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_67
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46086ab341ec5b260800000000000000
+      internalID: 7112817772797001828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_68
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: -8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68b4afd3790b4870800000000000000
+      internalID: 8668032301082654827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_69
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: -8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3411ec001a068410800000000000000
+      internalID: 1478880591689618494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_70
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 38
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69b15679a2665ee0800000000000000
+      internalID: -1272721364711523990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_71
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28832cec88b60c30800000000000000
+      internalID: 4325347407532623916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_72
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b144f3b9aa634d0800000000000000
+      internalID: -3155146905168372938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_73
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e526727e48e13b200800000000000000
+      internalID: 194532765069697630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_74
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cae9c9b8bac40b0800000000000000
+      internalID: -5743026808687776672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_75
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8540761bbeaf4b0800000000000000
+      internalID: -5405749255534782245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_76
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0294bcc97e0f3cc0800000000000000
+      internalID: -3729246050151263733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_77
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47598b4cbdabd8090800000000000000
+      internalID: -8030557107470690956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_78
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90a936f7eb62ec40800000000000000
+      internalID: 5540109135631720606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_79
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ccf2431a67ad9d0800000000000000
+      internalID: -2748754187818906547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_80
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4b28f3af9327bf0800000000000000
+      internalID: -328136075874487131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_81
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13a89c0862199880800000000000000
+      internalID: -8603825375017393377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_82
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac05987ca160c9320800000000000000
+      internalID: 2565932599780921546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_83
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794d8dc8d8dc2b5a0800000000000000
+      internalID: -6506912503759842153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_84
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 4, y: 8}
+        - {x: 8, y: 3}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e03ee38156fc850800000000000000
+      internalID: 6399444750325452327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_85
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -8}
+        - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eb354298e5813d0800000000000000
+      internalID: -3235732389152702885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_86
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89018f342719e95c0800000000000000
+      internalID: -4206765081964834664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_87
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f462e85a9905ae20800000000000000
+      internalID: 3361103255422788855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_88
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -8}
+        - {x: -8, y: -4}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399e2b020564c61f0800000000000000
+      internalID: -1050387303124244077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_89
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 3}
+        - {x: -4, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce49e56202170a50800000000000000
+      internalID: 6487173589759512264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_90
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: -8}
+        - {x: -5, y: -3}
+        - {x: -2, y: -1}
+        - {x: 0, y: -1}
+        - {x: 3, y: -2}
+        - {x: 5, y: -5}
+        - {x: 5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d425019264900d800800000000000000
+      internalID: 635017744400536141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_91
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: -8}
+        - {x: -1, y: 8}
+        - {x: 1, y: 8}
+        - {x: 1, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19da0e39921b31dc0800000000000000
+      internalID: -3669394479244071535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_92
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ff34a68b106b720800000000000000
+      internalID: 2861476504808980364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_93
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347b8109fb39af5c0800000000000000
+      internalID: -4180866853094508733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_94
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 155
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8580fdf46f167670800000000000000
+      internalID: 8536044662344942989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_95
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 146
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cf7706921aaaab0800000000000000
+      internalID: -4996003637529936892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_96
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 146
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c18c8ab82d6da30800000000000000
+      internalID: 4239807596489874440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_97
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1988ee360dd1b1e60800000000000000
+      internalID: 7933967949410240657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_98
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 146
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4f9184e19cb5130800000000000000
+      internalID: 3556657462635001066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_99
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 124
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8c352db4cd9aef0800000000000000
+      internalID: -96303698802390870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_100
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2dc40dcd6ea9a40800000000000000
+      internalID: 5375862941281997561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_101
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 124
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d717939c0a7cba0800000000000000
+      internalID: -6068705186745844344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumping_Stage_2_102
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 122
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0242a4b34c1e873f0800000000000000
+      internalID: -902723492363230176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

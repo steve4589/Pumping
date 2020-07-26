@@ -14,9 +14,9 @@ public class Player : MonoBehaviour
     public GameObject UIReStart;
 
     //플레이어 이동
-    public float moveSpeed;
-    public float jumpPower;
-    public float maxPumping;
+    private float moveSpeed = 10;
+    private float jumpPower = 10;
+    private float maxPumping = 200;
     float maxJump = 2;
     int jumpCount = 0;
     int pumpingCount = 0;
@@ -188,7 +188,6 @@ public class Player : MonoBehaviour
                 gameManager.energyBar.value -= 3;
             }
             pumpingCount = 0;
-            gameManager.pumpingBar.value = 0;
             gameManager.pumpingGauge = 0;
 
             gameManager.pumping.SetActive(false);

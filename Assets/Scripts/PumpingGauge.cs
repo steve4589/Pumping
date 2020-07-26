@@ -14,8 +14,6 @@ public class PumpingGauge : MonoBehaviour
     public Sprite fullSprite1;
     public Sprite fullSprite2;
 
-    Animator anim;
-
     private float timer;
     private float waitingTime;
 
@@ -26,25 +24,16 @@ public class PumpingGauge : MonoBehaviour
         timer = 0.0f;
         waitingTime = 0.2f;
         pumpingImage = GetComponent<Image>();
-        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         if (gameManager.pumpingGauge < 0.1f)
         {
-            //anim.Play("Empty");
-            //anim.SetBool("isHalf", false);
-            //anim.SetBool("isFull", false);
-            //pumpingImage.sprite = emptySprite;
             gameObject.GetComponent<Image>().sprite = emptySprite;
         }
         else if (gameManager.pumpingGauge >= 0.1f && gameManager.pumpingGauge < 0.9f)
         {
-            //anim.Play("Half");
-            //anim.SetBool("isHalf", true);
-            //anim.SetBool("isFull", false);
-            //pumpingImage.sprite = halfSprite;
             gameObject.GetComponent<Image>().sprite = halfSprite;
         }
         else if (gameManager.pumpingGauge >= 0.9f)
