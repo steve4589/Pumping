@@ -7,9 +7,18 @@ using System;
 
 public class Player : MonoBehaviour
 {
+    //타 스크립트
     public GameManager gameManager;
     public PumpingGauge pumpingGauge;
 
+    //사운드
+    public AudioClip audioJump;
+    public AudioClip audioDamaged;
+    public AudioClip audioDie;
+    public AudioClip audioMineTrap;
+    public AudioClip audioHpItem;
+    public AudioClip audioSpeedItem;
+    
     //게임 중 사망 시 다시 시작 버튼
     public GameObject UIReStart;
 
@@ -21,18 +30,17 @@ public class Player : MonoBehaviour
     int jumpCount = 0;
     int pumpingCount = 0;
 
+    //사망 효과음 On/Off
+    private bool audioPlay = true;
+
     Animator anim;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     CapsuleCollider2D capsuleCollider;
+    AudioSource audioSource;
 
+    //실시간 플레이어 위치
     Vector3 previousPosition = new Vector3();
-
-    public enum LayerName
-    {
-        BasicLayer = 0,
-        DeathLayer = 1
-    }
 
     public void Start()
     {
@@ -45,6 +53,7 @@ public class Player : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -56,15 +65,20 @@ public class Player : MonoBehaviour
 
         this.previousPosition = this.transform.position;
 
-        if(gameManager.energyBar.value <= 0.5f)
+        if(audioPlay == true)
         {
-            onDie();
+            if (gameManager.energyBar.value <= 0.5f)
+            {
+                onDie();
+                audioPlay = false;
+            }
+            else
+            {
+                gameManager.energyBar.value = Mathf.MoveTowards(gameManager.energyBar.value, 10f, Time.deltaTime * 1f);
+            }
         }
-        else
-        {
-            gameManager.energyBar.value = Mathf.MoveTowards(gameManager.energyBar.value, 10f, Time.deltaTime * 1f);
-        }
-
+       
+        //Energy가 0.5f 이상이어야 움직일 수 있다.
         if(gameManager.energyBar.value >= 0.5f && IsAlive) 
         {
             Jump();
@@ -138,7 +152,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public bool IsAlive
+    public bool IsAlive  //플레이어가 살아있는지, 죽었는지
     {
         get
         {
@@ -148,16 +162,19 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        //Jump
         if (Input.GetButtonDown("Jump") && jumpCount < 2 && gameManager.energyBar.value >= 1f)
         {
             if (jumpCount < maxJump)
             {
                 rigid.velocity = new Vector2(rigid.velocity.x, jumpPower);
+
                 anim.SetBool("isJumpUp", true);
                 anim.SetBool("isJumpDown", true);
+
                 gameManager.energyBar.value--;
                 jumpCount++;
+
+                PlaySound("Jump");
             }
         }
     }
@@ -172,7 +189,6 @@ public class Player : MonoBehaviour
             if (pumpingCount <= maxPumping)
             {
                 pumpingCount += 3;
-                //gameManager.pumpingBar.value = Mathf.MoveTowards(gameManager.pumpingBar.value, 1f, Time.deltaTime);
                 gameManager.pumpingGauge = Mathf.MoveTowards(gameManager.pumpingGauge, 1f, Time.deltaTime);
             }
         }
@@ -197,15 +213,6 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /* if (collision.gameObject.tag == "Enemy")
-        {
-            //Attack
-            /* if ((rigid.velocity.y < 0) && (transform.position.y > collision.transform.position.y))
-            {
-                //onAttack(collision.transform);
-            }
-        } */
-
         if(collision.gameObject.tag == "Platform")
         {
             anim.SetBool("isJumpUp", false);
@@ -213,19 +220,35 @@ public class Player : MonoBehaviour
 
         if(collision.gameObject.tag == "MineTrap")
         {
+            PlaySound("MineTrap");
             onDamaged(collision.transform.position, 5);
         }
 
         if(collision.gameObject.tag == "FootTrap")
         {
             this.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y);
-
             moveSpeed = 0;
-
-            Invoke("MoveOn", 1.1f);
-
+            Invoke("MoveSpeedReturn", 1.1f);
             VelocityZero();
         }
+
+        if (collision.gameObject.tag == "HpItem")
+        {
+            gameManager.energyBar.value += 4;
+            PlaySound("HpItem");
+        }
+
+        if (collision.gameObject.tag == "SpeedItem")
+        {
+            moveSpeed = 15;
+            PlaySound("SpeedItem");
+            Invoke("MoveSpeedReturn", 3f);
+        }
+    }
+
+    private void MoveSpeedReturn()
+    {
+        moveSpeed = 10;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -234,11 +257,6 @@ public class Player : MonoBehaviour
         {
             onDamaged(collision.transform.position, 1);
         }
-    }
-
-    private void MoveOn()
-    {
-        moveSpeed = 10;
     }
 
     private void onDamaged(Vector2 targetPos, int what)
@@ -280,6 +298,8 @@ public class Player : MonoBehaviour
 
         UIReStart.SetActive(true);
 
+        PlaySound("Die");
+
         anim.Play("Died");
 
         gameObject.layer = 11;
@@ -298,6 +318,38 @@ public class Player : MonoBehaviour
         {
             //Next Stage
             gameManager.NextStage();
+        }
+    }
+
+    void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "Jump":
+                audioSource.clip = audioJump;
+                break;
+            case "Damaged":
+                audioSource.clip = audioDamaged;
+                break;
+            case "Die":
+                audioSource.clip = audioDie;
+                break;
+            case "MineTrap":
+                audioSource.clip = audioMineTrap;
+                break;
+            case "HpItem":
+                audioSource.clip = audioHpItem;
+                break;
+            case "SpeedItem":
+                audioSource.clip = audioSpeedItem;
+                break;
+        }
+
+        audioSource.Play();
+
+        if (action == "Died")
+        {
+            audioSource.PlayOneShot(audioDie);
         }
     }
 }

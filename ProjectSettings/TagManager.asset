@@ -10,6 +10,8 @@ TagManager:
   - FenceTrap
   - FootTrap
   - MineTrap
+  - HpItem
+  - SpeedItem
   layers:
   - Default
   - TransparentFX

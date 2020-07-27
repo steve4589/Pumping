@@ -36,8 +36,6 @@ public class MiniMap : MonoBehaviour
 
         if (miniMap.activeSelf)
         {
-            //caMove.position = Vector3.Lerp(caMove.position, caMove.position, 2f * Time.deltaTime);
-
             if (Input.GetKey(KeyCode.J))
             {
                 caMove.Translate(-(cameraSpeed), 0, 0);
