@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     public AudioClip audioMineTrap;
     public AudioClip audioHpItem;
     public AudioClip audioSpeedItem;
-    
+
     //게임 중 사망 시 다시 시작 버튼
     public GameObject UIReStart;
 
@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
 
         this.previousPosition = this.transform.position;
 
-        if(audioPlay == true)
+        if (audioPlay == true)
         {
             if (gameManager.energyBar.value <= 0.5f)
             {
@@ -77,9 +77,9 @@ public class Player : MonoBehaviour
                 gameManager.energyBar.value = Mathf.MoveTowards(gameManager.energyBar.value, 10f, Time.deltaTime * 1f);
             }
         }
-       
+
         //Energy가 0.5f 이상이어야 움직일 수 있다.
-        if(gameManager.energyBar.value >= 0.5f && IsAlive) 
+        if (gameManager.energyBar.value >= 0.5f && IsAlive)
         {
             Jump();
 
@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(gameManager.energyBar.value >= 0.5f)
+        if (gameManager.energyBar.value >= 0.5f)
         {
             //Move Speed
             float h = Input.GetAxisRaw("Horizontal");
@@ -228,18 +228,18 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Platform")
+        if (collision.gameObject.tag == "Platform")
         {
             anim.SetBool("isJumpUp", false);
         }
 
-        if(collision.gameObject.tag == "MineTrap")
+        if (collision.gameObject.tag == "MineTrap")
         {
             PlaySound("MineTrap");
             onDamaged(collision.transform.position, 5);
         }
 
-        if(collision.gameObject.tag == "FootTrap")
+        if (collision.gameObject.tag == "FootTrap")
         {
             this.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y);
             moveSpeed = 0;
@@ -268,7 +268,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-         if (collision.gameObject.tag == "FenceTrap")
+        if (collision.gameObject.tag == "FenceTrap")
         {
             onDamaged(collision.transform.position, 1);
         }
@@ -289,7 +289,7 @@ public class Player : MonoBehaviour
             //Reaction Force
             rigid.AddForce(new Vector2(dirc, 0.5f) * 0.5f, ForceMode2D.Impulse);
         }
-        else if(what == 5)
+        else if (what == 5)
         {
             //Reaction Force
             rigid.AddForce(new Vector2(dirc, 3f) * 4f, ForceMode2D.Impulse);
